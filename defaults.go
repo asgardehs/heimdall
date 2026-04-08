@@ -12,8 +12,6 @@ var Defaults = []ConfigEntry{
 
 	// Muninn
 	{Namespace: "muninn", Key: "vault_path", Value: "", Type: "path"},
-	{Namespace: "muninn", Key: "database_path", Value: "", Type: "path"},
-	{Namespace: "muninn", Key: "model_name", Value: "nomic-ai/nomic-embed-text-v1.5", Type: "string"},
 
 	// Huginn
 	{Namespace: "huginn", Key: "default_theme", Value: "odin_compliance", Type: "string"},
@@ -38,8 +36,6 @@ var DefaultSchemas = []ConfigSchema{
 
 	// Muninn
 	{Namespace: "muninn", Key: "vault_path", Type: "path", Description: "Path to Muninn note vault", DefaultVal: ""},
-	{Namespace: "muninn", Key: "database_path", Type: "path", Description: "Path to Muninn SQLite database", DefaultVal: ""},
-	{Namespace: "muninn", Key: "model_name", Type: "string", Description: "Embedding model identifier", DefaultVal: "nomic-ai/nomic-embed-text-v1.5"},
 
 	// Huginn
 	{Namespace: "huginn", Key: "default_theme", Type: "string", Description: "Default rendering theme", DefaultVal: "odin_compliance"},
